@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="static/styles/waves.css">
+</head>
+<style>
+/* .img-responsive.img-center {
+  margin: 0 auto;
+} */
+#intro {
+  font-size: 20px;
+}
+.card {
+  backdrop-filter: blur;
+}
+</style>
+
+<body style="background-image: url('static/styles/download.jpeg'); background-repeat: no-repeat;background-size: cover;">
+  <!-- <h3 class="text-center rounded" style="font-size: 350%;  font-family: 'Audiowide' " >Team_35</h3><br> -->
+  <div class="card mt-3 mx-auto d-flex" style="width:50%">
+    <img class="card-img-top" src="static/styles/background.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title text-center" style="font-style: italic;">Water Flow Control Dashboard</h4>
+      <p class="card-text" id="intro">With varied storage structures and techniques implied in water management, it is crucial to manage and check the flow of water in these systems to detect  leaks, blockages, pipe bursts, and changes in liquid concentration due to contamination or pollution.
+        <br>Our <strong>water flow measurement system</strong> has been deployed across a pipe cross section, whose data for a particular date can be viewed by the user - <strong>admin</strong> by logging in the system 
+      </p>
+      <div class="row justify-content-center">
+        <button type="button" class="btn col-sm-4 btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Open Login Page
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <!-- <p id="intro">With varied storage structures and techniques implied in water management, it is crucial to manage and check the flow of water in these systems to detect  leaks, blockages, pipe bursts, and changes in liquid concentration due to contamination or pollution.
+      <br>Our <strong>water flow measurement system</strong> has been deployed across a pipe cross section, whose data for a particular date can be viewed by the user - <strong>admin</strong> by logging in the system 
+    <p> -->
+      <br><br><br><br><br>
+    <div class="row justify-content-end">
+    <!-- <button type="button" class="btn btn-primary col-sm-3" data-bs-toggle="modal" data-bs-target="#myModal">
+      Open Login Page
+    </button> -->
+    </div>
+  </div>
+  <!-- <div class="container mt-3">
+  <iframe class="float-end rounded" width="450" height="260" style="border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/38629/charts/2?title=Route%209%20Traffic&xaxis=Time&yaxis=Density%20of%20Eastbound%20Cars&color=0000FF&type=column&average=10&width=500&height=500&yaxismax=10&dynamic=true"></iframe>
+  </div> -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <!-- <img src="background.png" class="modal-title"> -->
+          <h4 class="modal-title">User Form</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <img class="img-responsive img-center rounded" style="width: 100%;" src="static/styles/background.png">
+          </div>
+          <form action="/login" class="was-validated" method="post">
+            <div class="mb-3 mt-3">
+              <p style="color: red;" hidden>invalid credentials</p>
+              <label for="uname">Username:</label>
+              <input type="uname" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <script>
+    document.body.style.transition = "1s";
+    setInterval(change_image() ,3000);
+    var i = 0;
+    function change_image()
+    {
+      if((i++) % 2 == 0)
+      {
+        document.body.style.backgroundImage = 'linear-gradient(to right, rgba(255,0,0,0), rgb(37, 30, 30))';
+      }
+      else document.body.style.backgroundImage = 'linear-gradient(to right, rgba(255,0,0,0), rgb(255, 0, 0))';
+    }
+  </script> -->
+
+
+</body>
+
+</html>
